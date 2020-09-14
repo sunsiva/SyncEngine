@@ -1,0 +1,8 @@
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SystemTrayApp\bin\Debug\SystemTrayApp.exe
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SystemTrayApp\bin\Debug\SystemTrayApp.pdb
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SystemTrayApp\obj\x86\Debug\SystemTrayApp.AboutBox.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SystemTrayApp\obj\x86\Debug\SystemTrayApp.Properties.Resources.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SystemTrayApp\obj\x86\Debug\SystemTrayApp.csproj.GenerateResource.cache
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SystemTrayApp\obj\x86\Debug\SystemTrayApp.exe
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SystemTrayApp\obj\x86\Debug\SystemTrayApp.pdb
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SystemTrayApp\obj\x86\Debug\SystemTrayApp.Settings.resources

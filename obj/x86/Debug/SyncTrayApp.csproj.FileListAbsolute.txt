@@ -1,0 +1,17 @@
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SystemTrayApp\obj\x86\Debug\SyncTrayApp.csprojAssemblyReference.cache
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SystemTrayApp\obj\x86\Debug\SyncTrayApp.AboutBox.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SystemTrayApp\obj\x86\Debug\SyncTrayApp.Settings.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SystemTrayApp\obj\x86\Debug\SyncTrayApp.csproj.GenerateResource.cache
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SyncTrayApp\obj\x86\Debug\SyncTrayApp.csprojAssemblyReference.cache
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SyncTrayApp\obj\x86\Debug\SyncTrayApp.AboutBox.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SyncTrayApp\obj\x86\Debug\SyncTrayApp.Settings.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SystemTrayApp\SyncTrayApp\obj\x86\Debug\SyncTrayApp.csproj.GenerateResource.cache
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.csprojAssemblyReference.cache
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.AboutBox.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.Settings.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.csproj.GenerateResource.cache
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.Properties.Resources.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\bin\Debug\SyncTrayApp.exe
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\bin\Debug\SyncTrayApp.pdb
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.exe
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.pdb
