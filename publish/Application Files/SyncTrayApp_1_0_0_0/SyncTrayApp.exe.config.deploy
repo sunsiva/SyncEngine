@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="BatchFile" value="git-commit.bat" />
+    <add key="AppPath" value="C:\syncengine\" />
+    <add key="RunDurationInMins" value="10" />
+  </appSettings>
+</configuration>

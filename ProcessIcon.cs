@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Diagnostics;
 using System.Windows.Forms;
 using SyncTrayApp.Properties;
@@ -13,7 +14,8 @@ namespace SyncTrayApp
 		/// <summary>
 		/// The NotifyIcon object.
 		/// </summary>
-		NotifyIcon ni;
+		readonly NotifyIcon ni;
+		readonly HelperContext _hlp = new HelperContext();
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="ProcessIcon"/> class.
@@ -32,7 +34,7 @@ namespace SyncTrayApp
 			// Put the icon in the system tray and allow it react to mouse clicks.			
 			ni.MouseClick += new MouseEventHandler(ni_MouseClick);
 			ni.Icon = Resources.SyncTrayApp;
-			ni.Text = "Cloud Sync";
+			ni.Text = "Click to see the Sync status"; // _hlp.SyncStatus();
 			ni.Visible = true;
 
 			// Attach a context menu.
@@ -59,7 +61,23 @@ namespace SyncTrayApp
 			if (e.Button == MouseButtons.Left)
 			{
 				// Start Windows Explorer.
-				Process.Start("explorer", null);
+				//Process.Start("explorer", null);
+				HelperContext _hlp = new HelperContext();
+				try
+				{
+					//var jobPath = ConfigurationManager.AppSettings["BatchFile"];
+			 		//Process.Start(jobPath, null);
+					//_hlp.Logging("AutoCommittedSuccessfully", "Sync_Click");
+					ni.MouseClick += new MouseEventHandler(ni_MouseClick);
+					ni.Icon = Resources.SyncTrayApp;
+					ni.Text = _hlp.SyncStatus();
+					ni.Visible = true;
+				
+				}
+				catch (Exception ex)
+				{
+					_hlp.Logging(ex.Message, "Sync_Click");
+				}
 			}
 		}
 	}

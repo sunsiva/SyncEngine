@@ -59,7 +59,28 @@ namespace SyncTrayApp.Properties {
                 resourceCulture = value;
             }
         }
-        
+
+        internal static System.Drawing.Bitmap red
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yellow
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("yellow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
@@ -99,7 +120,25 @@ namespace SyncTrayApp.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
+        internal static System.Drawing.Bitmap green
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap status
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("status", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
@@ -107,6 +146,15 @@ namespace SyncTrayApp.Properties {
         {
             get {
                 object obj = ResourceManager.GetObject("SyncTrayApp", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+
+        internal static System.Drawing.Icon alert
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("alert", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

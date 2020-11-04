@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SyncTrayApp")]
-[assembly: AssemblyDescription("Sync Tray App - Synchronizing the files with Github.")]
+[assembly: AssemblyDescription("Sync Tray App - Synchronizing the files with Azure DevOps.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Cache Technologies")]
 [assembly: AssemblyProduct("SyncTrayApp")]

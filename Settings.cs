@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -12,14 +14,17 @@ namespace SyncTrayApp
 {
     public partial class Settings : Form
     {
+        HelperContext _hlp = new HelperContext();
+        readonly string appPath = Environment.CurrentDirectory;
+        bool isFirstClone = false;
+        Process p = new Process();
+        string conflictPath = @"C:\\Conflicts\";
+        readonly string flGitClone = @"\\git-clone.bat";
+        readonly string flUserProfile = @"\\userprofile.txt";
+
         public Settings()
         {
             InitializeComponent();
-        }
-
-        private void folderBrowserDialog1_HelpRequest(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,26 +36,81 @@ namespace SyncTrayApp
             if (result == DialogResult.OK)
             {
                 textBox1.Text = folderDlg.SelectedPath;
-                saveFile(textBox1.Text);
                 _ = folderDlg.RootFolder;
-
-                
             }
         }
 
-        private void saveFile(string msg)
+        private void btnsave_Click(object sender, EventArgs e)
         {
-            //once you have the path you get the directory with:
-            var directory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            //Create Conflict folder if not already,
+            if (!Directory.Exists(conflictPath))
+                Directory.CreateDirectory(conflictPath);
 
-            // Save File to .txt  
-            FileStream fParameter = new FileStream(directory+"\\log.txt", FileMode.Append, FileAccess.Write);
-            StreamWriter m_WriterParameter = new StreamWriter(fParameter);
-            m_WriterParameter.BaseStream.Seek(0, SeekOrigin.End);
-            m_WriterParameter.Write(msg);
-            m_WriterParameter.Flush();
-            m_WriterParameter.Close();
+            if (txtUserName.Text==string.Empty)
+            {
+                lblStatusMsg.Text = "Please provide value";
+                txtUserName.Focus();
+                return;
+            }
+            if (textBox1.Text == string.Empty)
+            {
+                lblStatusMsg.Text = "Please provide value";
+                textBox1.Focus();
+                return;
+            }
+            if (txtUserToken.Text == string.Empty)
+            {
+                lblStatusMsg.Text = "Please provide value";
+                txtUserToken.Focus();
+                return;
+            }
+           
+            string cfgRepoUrl = ConfigurationManager.AppSettings["RepoUrl"];
+            string cfgRepoName = ConfigurationManager.AppSettings["RepoName"];
+            string[] getCfgUrl = cfgRepoUrl.Split('@');
+            cfgRepoUrl = cfgRepoUrl.Replace(getCfgUrl[0], "https://" + txtUserToken.Text);
+            _hlp.SaveUserSettings(txtUserName.Text + "|" + textBox1.Text + "|" + txtUserToken.Text+"|"+ cfgRepoUrl+"|"+ cfgRepoName, true);
+
+            //Git-clone
+            if (isFirstClone)
+            {
+                p = new Process();
+                p.StartInfo.FileName = appPath + flGitClone;
+                p.StartInfo.Verb = "runas";
+                p.Start();
+                p.WaitForExit();
+            }
+
+            //p = new Process();
+            //p.StartInfo.FileName = appPath + "\\task-enable.bat";
+            //p.StartInfo.Verb = "runas";
+            //p.Start();
+            //p.WaitForExit();
+
+            lblStatusMsg.Text = "Save successful.";
+            System.Threading.Thread.Sleep(2000);
+            this.Close();
         }
 
+        private void Settings_Load(object sender, EventArgs e)
+        {
+            lblStatusMsg.Text = string.Empty;
+            txtUserName.Focus();
+            string appLogPath = appPath + flUserProfile;
+
+            //User Settings
+            if (File.Exists(appLogPath))
+            {
+                string runDateStatus = File.ReadAllText(appLogPath);
+                if (!string.IsNullOrEmpty(runDateStatus))
+                {
+                    txtUserName.Text = runDateStatus.Split('|')[0];
+                    textBox1.Text = runDateStatus.Split('|')[1];
+                    txtUserToken.Text = runDateStatus.Split('|')[2];
+                }
+            }
+            else
+                isFirstClone = true;
+        }
     }
 }

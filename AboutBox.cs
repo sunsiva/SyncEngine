@@ -9,13 +9,20 @@ namespace SyncTrayApp
 		public AboutBox()
 		{
 			InitializeComponent();
+			//this.Text = String.Format("About {0}", AssemblyTitle);
+			//this.labelProductName.Text = AssemblyProduct;
+			//this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
+			//this.labelCopyright.Text = AssemblyCopyright;
+			//this.labelCompanyName.Text = AssemblyCompany;
+			//this.textBoxDescription.Text = AssemblyDescription;
+
 			this.Text = String.Format("About {0}", AssemblyTitle);
-			this.labelProductName.Text = AssemblyProduct;
-			this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-			this.labelCopyright.Text = AssemblyCopyright;
-			this.labelCompanyName.Text = AssemblyCompany;
-			this.textBoxDescription.Text = AssemblyDescription;
-		}
+			this.labelProductName.Text = "";
+			this.labelVersion.Text = "v1.1";
+			this.labelCopyright.Text = "Copyright © 2020. All Rights reserved.";
+			this.labelCompanyName.Text = "Cache Technologies";
+			this.textBoxDescription.Text = "Sync Tray App - Synchronizing the files with Azure DevOps.";
+	}
 
 		#region Assembly Attribute Accessors
 
@@ -96,5 +103,10 @@ namespace SyncTrayApp
 			}
 		}
 		#endregion
+
+		private void okButton_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 	}
 }

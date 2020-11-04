@@ -1,0 +1,1 @@
+"%PROGRAMFILES%\git\bin\sh.exe" "./git-auto-sync.sh"

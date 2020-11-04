@@ -1,0 +1,35 @@
+Sat, Oct 17, 2020 9:44:33 PM| Preparing. Repo in .git C:/Users/sundarsi/me/xtra/Cache Technologies/Gokare LPO/CloudSyncEngine/SyncDocs
+Sat, Oct 17, 2020 9:44:33 PM| Mode sync
+Sat, Oct 17, 2020 9:44:33 PM| Using origin/install_steps
+Sat, Oct 17, 2020 9:44:34 PM| Committing local changes using git add -u ; git commit -m "changes from 6QWKVT2 on Sat, Oct 17, 2020 9:44:33 PM";
+Sat, Oct 17, 2020 9:44:34 PM| Fetching from origin/install_steps
+Sat, Oct 17, 2020 9:44:38 PM| Pushing changes...
+Sat, Oct 17, 2020 9:44:42 PM| In sync, all fine.
+
+17-10-2020 22:27:23:saveFile(string msg):===============:C:\syncengine\docs
+17-10-2020 22:36:55:Sync_Click:===============:AutoCommittedSuccessfully
+17-10-2020 22:57:49:Main_Program:===============:The system cannot find the file specified
+17-10-2020 22:58:14:Sync_Click:===============:AutoCommittedSuccessfully
+17-10-2020 23:01:24:Sync_Click:===============:AutoCommittedSuccessfully
+17-10-2020 23:03:06:Sync_Click:===============:AutoCommittedSuccessfully"17-10-2020_23:03:10.92| App-Push changes done.." 
+
+17-10-2020 23:08:30:Sync_Click::AutoCommittedSuccessfully
+17-10-2020 23:11:47:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 09:18:42:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 09:56:35:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 09:58:07:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 09:59:46:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 10:00:57:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 10:02:14:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 10:03:51:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 10:04:32:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 10:32:48:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 10:34:57:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 10:38:48:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 10:40:21:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 10:54:13:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 10:56:30:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 10:58:03:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 10:58:42:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 11:00:21:Sync_Click::AutoCommittedSuccessfully
+18-10-2020 11:01:24:Sync_Click::AutoCommittedSuccessfully

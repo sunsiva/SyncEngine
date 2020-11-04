@@ -15,3 +15,43 @@ C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\bin\Debug\Sy
 C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\bin\Debug\SyncTrayApp.pdb
 C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.exe
 C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.pdb
+C:\Users\sundarsi\me\xtra\Cache Technologies\CloudSyncEngine\SyncApp\bin\Debug\SyncTrayApp.exe
+C:\Users\sundarsi\me\xtra\Cache Technologies\CloudSyncEngine\SyncApp\bin\Debug\SyncTrayApp.pdb
+C:\Users\sundarsi\me\xtra\Cache Technologies\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.csprojAssemblyReference.cache
+C:\Users\sundarsi\me\xtra\Cache Technologies\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.AboutBox.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.Properties.Resources.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.Settings.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.csproj.GenerateResource.cache
+C:\Users\sundarsi\me\xtra\Cache Technologies\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.exe
+C:\Users\sundarsi\me\xtra\Cache Technologies\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.pdb
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.AboutBox.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.Properties.Resources.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.Settings.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.csproj.GenerateResource.cache
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\bin\Debug\SyncTrayApp.exe.config
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\bin\Debug\SyncTrayApp.exe
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\bin\Debug\SyncTrayApp.pdb
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.exe
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.pdb
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\bin\Debug\SyncTrayApp.exe.manifest
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\bin\Debug\SyncTrayApp.application
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.exe.manifest
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.application
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.csprojAssemblyReference.cache
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\bin\Debug\Images\Cache-icon.ico
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\bin\Debug\Resources\status.png
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.Status.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.Notification.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncEngine.Alert.Form1.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\CloudSyncEngine\SyncApp\obj\x86\Debug\SyncTrayApp.SyncEngine.Alert.Properties.Resources.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\bin\Debug\Images\Cache-icon.ico
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\bin\Debug\Resources\status.png
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\bin\Debug\SyncTrayApp.exe.config
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\bin\Debug\SyncTrayApp.exe.manifest
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\bin\Debug\SyncTrayApp.application
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.Notification.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.Status.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncEngine.Alert.Form1.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.SyncEngine.Alert.Properties.Resources.resources
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.exe.manifest
+C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\SyncTrayApp\obj\x86\Debug\SyncTrayApp.application

@@ -3,6 +3,8 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using SyncTrayApp.Properties;
 using System.Drawing;
+using System.Configuration;
+using System.IO;
 
 namespace SyncTrayApp
 {
@@ -16,6 +18,12 @@ namespace SyncTrayApp
 		/// </summary>
 		bool isAboutLoaded = false;
 		bool isSettingsLoaded = false;
+	    bool isStatusLoaded =false;
+		readonly string appPath = ConfigurationManager.AppSettings["Environment"]=="local"? ConfigurationManager.AppSettings["AppPath"] : Environment.CurrentDirectory;
+		HelperContext _hlp = new HelperContext();
+		Process p = new Process();
+		readonly string flLastSyncSts = @"\\last_sync_status.txt";
+		readonly string flUserProfile = @"\\userprofile.txt";
 
 		/// <summary>
 		/// Creates this instance.
@@ -42,6 +50,17 @@ namespace SyncTrayApp
 			item.Image = Resources.Explorer;
 			menu.Items.Add(item);
 
+			// Separator.
+			sep = new ToolStripSeparator();
+			menu.Items.Add(sep);
+
+			// Status.
+			item = new ToolStripMenuItem();
+			item.Text = "Status";
+			item.Click += new EventHandler(Status_Click);
+			item.Image = Resources.status;
+			menu.Items.Add(item);
+
 			// Sync.
 			item = new ToolStripMenuItem();
 			item.Text = "Sync";
@@ -53,12 +72,15 @@ namespace SyncTrayApp
 			sep = new ToolStripSeparator();
 			menu.Items.Add(sep);
 
-			// Exit.
-			item = new ToolStripMenuItem();
-			item.Text = "Exit";
-			item.Click += new System.EventHandler(Exit_Click);
-			item.Image = Resources.Exit;
-			menu.Items.Add(item);
+			//if(ConfigurationManager.AppSettings["IsExitEnable"].ToString().ToLower()=="yes")
+				{ 
+				// Exit.
+				item = new ToolStripMenuItem();
+				item.Text = "Exit";
+				item.Click += new System.EventHandler(Exit_Click);
+				item.Image = Resources.Exit;
+				menu.Items.Add(item);
+			}
 
 			return menu;
 		}
@@ -101,7 +123,54 @@ namespace SyncTrayApp
 		/// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
 		void Sync_Click(object sender, EventArgs e)
 		{
-			Process.Start(@"C:\Users\sundarsi\me\xtra\Cache Technologies\Gokare LPO\POC\gitautocommit.bat", null);
+			try
+			{
+				if (File.Exists(appPath + flUserProfile) && !string.IsNullOrEmpty(File.ReadAllText(appPath + flUserProfile)))
+				{
+					p = new Process();
+					p.StartInfo.FileName = appPath + "\\" + ConfigurationManager.AppSettings["BatchFile"];
+					p.StartInfo.Verb = "runas";
+					p.Start();
+					p.WaitForExit();
+
+					_hlp.Logging("ManualSync", "Sync_Click");
+
+					System.Threading.Thread.Sleep(10000);
+					string gitStatus = File.ReadAllText(appPath + flLastSyncSts);
+					if (gitStatus.ToUpper().Contains("CONFLICT")) //TODO: need check the datetime and then call the conflict
+					{
+						new Notification().ShowDialog();
+					}
+					MessageBox.Show("Sync completed.");
+				}
+				else
+				{ 
+					new Settings().ShowDialog();
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Sync Failed.");
+				_hlp.Logging(ex.Message, "Sync_Click");
+				_hlp.SaveUserSettings(DateTime.Now + "_Failure", false);
+			}
+		}
+
+		void Status_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				if (!isStatusLoaded)
+				{
+					isStatusLoaded = true;
+					new Status().ShowDialog();
+					isStatusLoaded = false;
+				}
+			}
+			catch (Exception ex)
+			{
+				_hlp.Logging(ex.Message, "Status_Click");
+			}
 		}
 
 		/// <summary>
@@ -111,6 +180,12 @@ namespace SyncTrayApp
 		/// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
 		void Exit_Click(object sender, EventArgs e)
 		{
+			//p = new Process();
+			//p.StartInfo.FileName = appPath + "\\task-disable.bat";
+			//p.StartInfo.Verb = "runas";
+			//p.Start();
+			//p.WaitForExit();
+
 			// Quit without further ado.
 			Application.Exit();
 		}

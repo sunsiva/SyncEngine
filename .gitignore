@@ -1,0 +1,13 @@
+.vs/
+bin/
+obj/
+Debug/
+Release/
+*/**/bin/Debug
+*/**/bin/Release
+*/**/obj/Debug
+*/**/obj/Release
+*.exe
+*.pdb
+*.manifest
+*.cache
