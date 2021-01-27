@@ -1,5 +1,7 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+SyncEngine is the applicaiton to serve the users to sync their files/folders into AzureDevOps/Git Repos automatically.
+It allows the user to setup the frequency of the sync process to be done anonymously.
+Bulit on MS.Net for the Gui App and shell commands
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
