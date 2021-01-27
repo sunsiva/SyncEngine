@@ -121,6 +121,7 @@
     <Compile Include="SyncEngine.Alert\Properties\Settings.Designer.cs" />
     <None Include="Images\alert.ico" />
     <Content Include="output\last_sync_status.txt" />
+    <Content Include="output\settings.txt" />
     <Content Include="SyncEngine.Alert\alert.ico" />
     <Content Include="SyncEngine.Alert\bin\Debug\SyncEngine.Alert.exe" />
     <Content Include="SyncEngine.Alert\bin\Debug\SyncEngine.Alert.pdb" />
@@ -156,16 +157,17 @@
     <None Include="Documentation\Help-Document.xlsx" />
     <None Include="git-support\sync_log.log" />
     <Content Include="Job\git-clone.bat" />
-    <None Include="Job\git-auto-sync.sh" />
-    <None Include="Job\git-commit - InternalCopy.bat" />
+    <None Include="Job\ref\git-auto-sync.sh" />
+    <None Include="Job\ref\git-commit - InternalCopy.bat" />
     <None Include="Job\git-commit.bat" />
-    <Content Include="Job\git-status.bat" />
+    <Content Include="Job\ref\git-status.bat" />
     <None Include="Job\git-status-check.bat" />
     <None Include="Job\git-sync.sh" />
-    <None Include="Job\pre-installer.bat" />
+    <None Include="Job\ref\pre-installer.bat" />
+    <None Include="Job\ref\pre-requisite.bat" />
     <None Include="Job\run-auto-sync.bat" />
-    <None Include="Job\task-disable.bat" />
-    <None Include="Job\task-enable.bat" />
+    <None Include="Job\ref\task-disable.bat" />
+    <None Include="Job\ref\task-enable.bat" />
     <None Include="Job\task-schedular.bat" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

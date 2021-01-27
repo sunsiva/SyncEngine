@@ -1,0 +1,1 @@
+schtasks /Change /Disable /TN "MyTasks\SyncEngine"

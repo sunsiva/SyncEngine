@@ -15,80 +15,80 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_055854B33195436A94EC5AEEF1945C63"
+        "MsmKey" = "8:_4A56FF1342CE41429E7B409068E02255"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_23BF08E550C44DC4867DD9D4F40DF151"
+        "MsmKey" = "8:_5494B2CF670D4888854BDF68D2E07669"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_28354C220F5A4E51A1FF230EA4DBF5FB"
+        "MsmKey" = "8:_67F2936E8CE04B9FB455F4EAC4EFB902"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_3C796D563B124FE5ACFF6DECD4502AB5"
+        "MsmKey" = "8:_6E15D66216134A4D95DDC9F80D9FB8BF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_8B7296076C6846DAB4DB3B991AC9F753"
+        "MsmKey" = "8:_81D57C24C75F4E83B7320231A7B21FF9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_BC74E32A8ABE4B6FA526CAA5D91A869B"
+        "MsmKey" = "8:_842687724987405EBEE99B171884386E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_C20305F4F037483E93D4EECB4C37E565"
+        "MsmKey" = "8:_8F359CF3934D4F8B8F05C5BE641AA6E9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_C9F8C2B13B3C4187AEA8D40D1D317764"
+        "MsmKey" = "8:_991FE87E07864752A8392E343CD05B3F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_D3FCC5F09E7443A9ABDFB409A73CECF8"
+        "MsmKey" = "8:_C771395215874D7FA683FBC47B41EF09"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E665876014CD4A4C9C86EF18216F7305"
+        "MsmKey" = "8:_CD35F5FED9234E42B4AF7A50D314B170"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_F02803BF227349DF9957316BE7A67B07"
+        "MsmKey" = "8:_F4C12783AE4A4D88B4C718AE2BE2DA26"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3C796D563B124FE5ACFF6DECD4502AB5"
+        "OwnerKey" = "8:_81D57C24C75F4E83B7320231A7B21FF9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_23BF08E550C44DC4867DD9D4F40DF151"
+        "OwnerKey" = "8:_67F2936E8CE04B9FB455F4EAC4EFB902"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -186,10 +186,10 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_055854B33195436A94EC5AEEF1945C63"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4A56FF1342CE41429E7B409068E02255"
             {
-            "SourcePath" = "8:..\\Job\\task-disable.bat"
-            "TargetName" = "8:task-disable.bat"
+            "SourcePath" = "8:..\\output\\settings.txt"
+            "TargetName" = "8:settings.txt"
             "Tag" = "8:"
             "Folder" = "8:_26CE16F8FB16469BBA2958AA11A28D08"
             "Condition" = "8:"
@@ -206,67 +206,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_28354C220F5A4E51A1FF230EA4DBF5FB"
-            {
-            "SourcePath" = "8:..\\Images\\Cache-icon.ico"
-            "TargetName" = "8:Cache-icon.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_26CE16F8FB16469BBA2958AA11A28D08"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8B7296076C6846DAB4DB3B991AC9F753"
-            {
-            "SourcePath" = "8:..\\output\\last_sync_status.txt"
-            "TargetName" = "8:last_sync_status.txt"
-            "Tag" = "8:"
-            "Folder" = "8:_26CE16F8FB16469BBA2958AA11A28D08"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BC74E32A8ABE4B6FA526CAA5D91A869B"
-            {
-            "SourcePath" = "8:..\\Job\\git-commit.bat"
-            "TargetName" = "8:git-commit.bat"
-            "Tag" = "8:"
-            "Folder" = "8:_26CE16F8FB16469BBA2958AA11A28D08"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C20305F4F037483E93D4EECB4C37E565"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5494B2CF670D4888854BDF68D2E07669"
             {
             "SourcePath" = "8:..\\Job\\git-sync.sh"
             "TargetName" = "8:git-sync.sh"
@@ -286,10 +226,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C9F8C2B13B3C4187AEA8D40D1D317764"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6E15D66216134A4D95DDC9F80D9FB8BF"
             {
-            "SourcePath" = "8:..\\Job\\task-enable.bat"
-            "TargetName" = "8:task-enable.bat"
+            "SourcePath" = "8:..\\output\\last_sync_status.txt"
+            "TargetName" = "8:last_sync_status.txt"
             "Tag" = "8:"
             "Folder" = "8:_26CE16F8FB16469BBA2958AA11A28D08"
             "Condition" = "8:"
@@ -306,7 +246,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D3FCC5F09E7443A9ABDFB409A73CECF8"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_842687724987405EBEE99B171884386E"
             {
             "SourcePath" = "8:..\\Job\\git-clone.bat"
             "TargetName" = "8:git-clone.bat"
@@ -326,7 +266,47 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E665876014CD4A4C9C86EF18216F7305"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8F359CF3934D4F8B8F05C5BE641AA6E9"
+            {
+            "SourcePath" = "8:..\\Images\\Cache-icon.ico"
+            "TargetName" = "8:Cache-icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_26CE16F8FB16469BBA2958AA11A28D08"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_991FE87E07864752A8392E343CD05B3F"
+            {
+            "SourcePath" = "8:..\\Images\\alert.ico"
+            "TargetName" = "8:alert.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_26CE16F8FB16469BBA2958AA11A28D08"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C771395215874D7FA683FBC47B41EF09"
             {
             "SourcePath" = "8:..\\Job\\git-status-check.bat"
             "TargetName" = "8:git-status-check.bat"
@@ -346,10 +326,30 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F02803BF227349DF9957316BE7A67B07"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CD35F5FED9234E42B4AF7A50D314B170"
             {
-            "SourcePath" = "8:..\\Images\\alert.ico"
-            "TargetName" = "8:alert.ico"
+            "SourcePath" = "8:..\\Job\\task-schedular.bat"
+            "TargetName" = "8:task-schedular.bat"
+            "Tag" = "8:"
+            "Folder" = "8:_26CE16F8FB16469BBA2958AA11A28D08"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F4C12783AE4A4D88B4C718AE2BE2DA26"
+            {
+            "SourcePath" = "8:..\\Job\\git-commit.bat"
+            "TargetName" = "8:git-commit.bat"
             "Tag" = "8:"
             "Folder" = "8:_26CE16F8FB16469BBA2958AA11A28D08"
             "Condition" = "8:"
@@ -423,7 +423,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SyncEngine"
         "ProductCode" = "8:{2C869845-CFF9-4A21-B17E-0F21AC655133}"
-        "PackageCode" = "8:{9C2EBEBB-17DD-4B3C-BE38-52BF09CC8FB4}"
+        "PackageCode" = "8:{98ADFE46-56A1-4B1C-8671-75A7D8616959}"
         "UpgradeCode" = "8:{EF3D9B63-BA97-4770-8A92-BBC497950D0B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -543,7 +543,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_439A671A61114DD586745540518DDAD1"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8F066214CE1B47B88400ACCB2EE1230C"
             {
             "Name" = "8:SyncEngine"
             "Arguments" = "8:"
@@ -551,10 +551,10 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_23BF08E550C44DC4867DD9D4F40DF151"
+            "Target" = "8:_67F2936E8CE04B9FB455F4EAC4EFB902"
             "Folder" = "8:_24223B2E4F744908B0BFA833D261C59C"
             "WorkingFolder" = "8:_26CE16F8FB16469BBA2958AA11A28D08"
-            "Icon" = "8:_28354C220F5A4E51A1FF230EA4DBF5FB"
+            "Icon" = "8:_8F359CF3934D4F8B8F05C5BE641AA6E9"
             "Feature" = "8:"
             }
         }
@@ -956,7 +956,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_23BF08E550C44DC4867DD9D4F40DF151"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_67F2936E8CE04B9FB455F4EAC4EFB902"
             {
             "SourcePath" = "8:..\\obj\\x86\\Debug\\SyncTrayApp.exe"
             "TargetName" = "8:"
@@ -984,7 +984,7 @@
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3C796D563B124FE5ACFF6DECD4502AB5"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_81D57C24C75F4E83B7320231A7B21FF9"
             {
             "SourcePath" = "8:..\\SyncEngine.Alert\\obj\\Debug\\SyncEngine.Alert.exe"
             "TargetName" = "8:"

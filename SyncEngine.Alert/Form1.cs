@@ -45,8 +45,6 @@ namespace SyncEngine.Alert
             timer1.Interval = 1000; // 1 second
             timer1.Start();
             lblCountDown.Text = counter.ToString();
-
-            this.Close();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -68,13 +66,24 @@ namespace SyncEngine.Alert
             }
             lblCountDown.Text = counter.ToString();
         }
-
+        /// <summary>
+        /// Sync Now
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             CallGitCommit(true);
+            System.Threading.Thread.Sleep(5000);
+            this.Close();
         }
 
+        /// <summary>
+        /// Skip sync for now
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             CallGitCommit(false);
@@ -85,8 +94,8 @@ namespace SyncEngine.Alert
         {
             if (isGitCommit)
             {
+                _ = new Process();
                 Process p = new Process();
-                p = new Process();
                 p.StartInfo.FileName = _appPath + "\\" + ConfigurationManager.AppSettings["BatchFile"];
                 p.StartInfo.Verb = "runas";
                 p.Start();

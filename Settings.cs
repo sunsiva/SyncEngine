@@ -15,11 +15,12 @@ namespace SyncTrayApp
     public partial class Settings : Form
     {
         HelperContext _hlp = new HelperContext();
-        readonly string appPath = Environment.CurrentDirectory;
+        readonly string appPath = ConfigurationManager.AppSettings["Environment"] == "local" ? ConfigurationManager.AppSettings["AppPath"] : Environment.CurrentDirectory;
         bool isFirstClone = false;
         Process p = new Process();
         string conflictPath = @"C:\\Conflicts\";
         readonly string flGitClone = @"\\git-clone.bat";
+        readonly string flTaskSchedular = @"\\task-schedular.bat";
         readonly string flUserProfile = @"\\userprofile.txt";
 
         public Settings()
@@ -72,10 +73,19 @@ namespace SyncTrayApp
             _hlp.SaveUserSettings(txtUserName.Text + "|" + textBox1.Text + "|" + txtUserToken.Text+"|"+ cfgRepoUrl+"|"+ cfgRepoName, true);
 
             //Git-clone
-            if (isFirstClone)
+            bool isCloneEnable = Convert.ToBoolean(ConfigurationManager.AppSettings["IsCloneEnable"]);
+            if (isFirstClone && isCloneEnable)
             {
                 p = new Process();
                 p.StartInfo.FileName = appPath + flGitClone;
+                p.StartInfo.Verb = "runas";
+                p.Start();
+                p.WaitForExit();
+            }
+            else
+            {
+                p = new Process();
+                p.StartInfo.FileName = appPath + flTaskSchedular;
                 p.StartInfo.Verb = "runas";
                 p.Start();
                 p.WaitForExit();

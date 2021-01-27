@@ -141,7 +141,7 @@ namespace SyncTrayApp
 					{
 						new Notification().ShowDialog();
 					}
-					MessageBox.Show("Sync completed.");
+					//MessageBox.Show("Sync completed.");
 				}
 				else
 				{ 

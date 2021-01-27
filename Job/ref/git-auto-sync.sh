@@ -55,19 +55,8 @@ DEFAULT_AUTOCOMMIT_MSG="changes from $(uname -n) on $(date)"
 
 __log_msg()
 {
-echo $(date)"|" $1 >>"C:/CacheTech/SyncEngine/sync_log.log"
+	echo $(date)"|" $1 >>"C:\CacheTech\SyncEngine\auto_sync_log.log"
     echo git-sync: $1
-}
-
-__status_log()
-{
-	echo $1 >"C:/CacheTech/SyncEngine/git_status.txt"
-}
-
-__last_sync_status_log()
-{
-	#echo $(date)"_"$1 >"C:/CacheTech/SyncEngine/last_sync_status.txt"
-	echo $1 >"C:/CacheTech/SyncEngine/last_sync_status.txt"
 }
 
 # echo the git dir
@@ -190,11 +179,9 @@ exit_assuming_sync() {
     else
 	__log_msg "Synchronization FAILED! You should definitely check your repository carefully!"
 	__log_msg "(Possibly a transient network problem? Please try again in that case.)"
-	__log_msg "FAILED | Probably Network issue - Contact Cache Technologies"
 	exit 3
     fi
 }
-
 
 #
 #        Here git-sync actually starts
@@ -204,13 +191,11 @@ exit_assuming_sync() {
 rstate="$(git_repo_state)"
 if [[ -z "$rstate" || "|DIRTY" = "$rstate" ]]; then
     __log_msg "Preparing. Repo in $(__gitdir)"
-	#echo "" >"C:/CacheTech/SyncEngine/last_sync_status.txt"
 elif [[ "NOGIT" = "$rstate" ]] ; then
     __log_msg "No git repository detected. Exiting."
     exit 128 # matches git's error code
 else
     __log_msg "Git repo state considered unsafe for sync: $(git_repo_state)"
-	__log_msg "FAILED | Probably Network issue - Contact Cache Technologies"
     exit 2
 fi
 
@@ -242,20 +227,19 @@ fi
 # check if current branch is configured for sync
 if [ "true" != "$(git config --get --bool branch.$branch_name.sync)" ] ; then
 	git config --bool branch.$branch_name.sync true
-#if [ "true" != "$(git config --get --bool branch.$branch_name.sync)" ] ; then
-#   echo
-#  __log_msg "Please use"
-# echo
-#    __log_msg "  git config --bool branch.$branch_name.sync true"
-#    echo
-#    __log_msg "to whitelist branch $branch_name for synchronization."
-#    __log_msg "Branch $branch_name has to have a same-named remote branch"
-#    __log_msg "for git-sync to work."
-#    echo
-#    __log_msg "(If you don't know what this means, you should change that"
-#    __log_msg "before relying on this script. You have been warned.)"
-#    echo
-#    exit 1
+    #echo
+    #__log_msg "Please use"
+    #echo
+    #__log_msg "  git config --bool branch.$branch_name.sync true"
+    #echo
+    #__log_msg "to whitelist branch $branch_name for synchronization."
+    #__log_msg "Branch $branch_name has to have a same-named remote branch"
+    #__log_msg "for git-sync to work."
+    #echo
+    #__log_msg "(If you don't know what this means, you should change that"
+    #__log_msg "before relying on this script. You have been warned.)"
+    #echo
+    #exit 1
 fi
 
 # determine mode
@@ -273,19 +257,17 @@ __log_msg "Mode $mode"
 __log_msg "Using $remote_name/$branch_name"
 
 # check for intentionally unhandled file states
-if [ "true" != "$(git config --get --bool branch.$branch_name.syncNewFiles)" ] ; then
-	git config --bool branch.$branch_name.syncNewFiles true	
-fi
+
 if [ ! -z "$(check_initial_file_state)" ] ; then
     __log_msg "There are changed files you should probably handle manually."
-	 exit 1
+	
+    git status
+    exit 1
 fi
 
 # if in check mode, this is all we need to know
 if [ $mode == "check" ] ; then
     __log_msg "check OK; sync may start."
-	git fetch
-	git status > "C:/CacheTech/SyncEngine/git_status.txt"	
     exit 0
 fi
 
@@ -293,10 +275,7 @@ fi
 if [ ! -z "$(local_changes)" ]; then
     autocommit_cmd=""
     config_autocommit_cmd="$(git config --get branch.$branch_name.autocommitscript)"
-    	
-		
-	git config --bool branch.$branch_name.syncNewFiles true
-
+    
     # discern the three ways to auto-commit
     if [ ! -z "$config_autocommit_cmd" ]; then
 	autocommit_cmd="$config_autocommit_cmd"
@@ -344,12 +323,12 @@ case "$(sync_state)" in
 	__log_msg "Pushing changes..."
 	
 	git push $remote_name $branch_name:$branch_name
-	
+	echo "$(date)_Success" >"C:\syncengine\sync_status.txt"
 	if [ $? == 0 ]; then
 	    exit_assuming_sync
 	else
 	    __log_msg "git push returned non-zero. Likely a connection failure."
-		__log_msg "FAILED | Probably Network issue - Contact Cache Technologies"
+		echo "$(date)_Failure" >"C:\syncengine\sync_status.txt"
 	    exit 3
 	fi
 	;;
@@ -370,34 +349,19 @@ case "$(sync_state)" in
 	if [[ $? == 0 && -z "$(git_repo_state)" && "ahead" == "$(sync_state)" ]] ; then
 	    __log_msg "Rebasing went fine, pushing..."
 	    git push $remote_name $branch_name:$branch_name
-		__log_msg "SUCCESS | Sync Completed."
 	    exit_assuming_sync
 	else
 	    __log_msg "Rebasing failed, likely there are conflicting changes. Resolve them and finish the rebase before repeating git-sync."
+		getfls=$(git diff --name-only)
+				
+		echo $getfls
+		for Item in $getfls ;
+			do
+			echo $Item
+			git show :1:$Item > 'myfiles\'$Item
 		
-		conflicted_files=$(git diff --name-only --diff-filter=U)
-		__log_msg "Conflicting files are ${conflicted_files}"
-		readarray -t files <<<"$conflicted_files"
-		for file in "${files[@]}"
-		do
-			flattenedfile="${file##*/}"
-			#TODO - Remove hard coding of C:/Conflicts and read from configuration
-			echo "Moving the file $flattenedfile that has conflict to C:\SyncEngine\Conflicts"
-			git show :3:"$file" > "C:\SyncEngine\Conflicts/$flattenedfile"
-			
-		# or do whatever with individual element of the array
 		done
-		__last_sync_status_log "CONFLICT FOUND | $conflicted_files"
-		git add .
-		git rebase --continue		
-		if [[ $? == 0 ]] ; then #Test - TODO 
-			__log_msg "Found files other than conflict"
-			git push
-		else	
-			__log_msg "No other files other than conflict"
-			git rebase --skip
-			git push
-		fi
+	
 		#for loop for all files that have merge conflict
 		#git show :1:folder/file > save to temp dir
 		#end for
